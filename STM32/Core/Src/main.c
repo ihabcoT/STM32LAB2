@@ -264,7 +264,7 @@ void update7SEG (int index) {
 }
 
 int state = 0;
-int counter = 250;
+int counter = 50;
 int led_state = 0;
 int led_counter = 100;
 
@@ -318,7 +318,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 		}
 		state++;
 		if (state == 4) state = 0;
-		counter = 250;
+		counter = 50;
 	}
 }
 /* USER CODE END 4 */
