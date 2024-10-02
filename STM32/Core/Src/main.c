@@ -56,7 +56,7 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int hour = 23, minute = 59, second = 50;
+int hour = 15, minute = 8, second = 50;
 int led_buffer[4];
 void updateClockBuffer() {
     led_buffer[0] = hour/10;
@@ -97,8 +97,7 @@ void timer_run() {
 }
 const int MAX_LED = 4;
 int index_led = 0;
-int led_buffer [4] = {2, 3, 5, 9};
-//int led_buffer[4];
+int led_buffer [4] = {1, 5, 0, 8};
 void update7SEG (int index) {
 	switch (index) {
 		case 0:
